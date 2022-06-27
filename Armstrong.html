@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prime Number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		n=parseInt(prompt("Enter the Number"));
+		len=n.length;
+		temp=n;
+		a=0;
+		sum=0;
+		ans=1;
+		while(n>=1)
+		{
+			b=n%10;
+			sum=sum+math.pow(b,len);
+			n=parseInt(n/10);
+			
+		}
+	
+		document.write(ans);
+		if(sum==temp)
+			
+		{
+			document.write("number is Armstrong");
+		}
+		
+		else
+		{
+			document.write("number is Not Armstrong");
+		}
+	</script>
+</body>
+</html>
